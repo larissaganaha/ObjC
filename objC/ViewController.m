@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "GameCell.h"
-#import "GameDetailsController.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -29,7 +27,6 @@
     self.games = NSMutableArray.new;
     self.navigationItem.title = @"Games";
     // set large titles iOS 11 style
-    self.navigationController.navigationBar.prefersLargeTitles = YES;
     [self setupGames];
 
 
@@ -44,11 +41,12 @@
 - (void)setupGames {
     // instantiate new Games object
     Games *game = Games.new;
-    game.name = @"Crash Bandicoot";
+    game.name = @"Crash Bandicoot N. Sane Trilogy";
     game.category = @"Adventure";
     game.imageHomeScreen = @"crash";
     game.imageDetailScreen = @"crash2";
     game.studio = @"Naughty Dog";
+    game.gameDescription = @"Crash Bandicoot, an experiment gone wrong, must chase down and thwart the evil genius Dr. Cortex's plans to raise an evil army of genetically mutated animals in this remake of the critically-acclaimed original 3 PlayStation 1 games.";
     [self.games addObject:game];
 
     game = Games.new;
@@ -66,7 +64,7 @@
     game.imageHomeScreen = @"fortnite";
     game.imageDetailScreen = @"fortnite2";
     game.studio = @"Naughty Dog";
-
+    game.gameDescription = @"The Storm came without warning and wiped out 98 percent of the world's population in a flash. Poof. Adios. Sayonara. Then came the monsters, wave after wave, night after night. Destroying everything in their path. But it's not all doom and gloom. In an abandoned missile silo, was found one of the first weapons against the Storm you. They are looking for a few good commanders like you to help make a difference, push back the storm and protect those among us who are unable to protect themselves.";
     [self.games addObject:game];
 }
 

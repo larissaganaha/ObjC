@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Games.h"
 #import "GameCell.h"
+#import "GameDetailsController.h"
 
 @interface ViewController : UIViewController
-
 
 @end
 

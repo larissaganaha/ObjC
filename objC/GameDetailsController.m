@@ -16,28 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = _game.name;
 
+    if([_game.name  isEqual: @"Crash Bandicoot N. Sane Trilogy"]){
+        self.navigationItem.title = @"Crash Bandicoot";
+    } else {
+        self.navigationItem.title = _game.name;
+    }
     _categoryLabel.text = _game.category;
     _studioLabel.text = _game.studio;
     _image.image = [UIImage imageNamed:_game.imageDetailScreen];
-    _descriptionLabel.text = _game.description;
-    // Do any additional setup after loading the view.
+    _descriptionLabel.text = _game.gameDescription;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
