@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface GameCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *gameImage;
+@property (weak, nonatomic) IBOutlet UILabel *gameNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *gameCategoryLabel;
 
 @end

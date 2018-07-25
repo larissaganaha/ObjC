@@ -14,6 +14,9 @@
 		4242133B2107A4760099530B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4242133A2107A4760099530B /* Assets.xcassets */; };
 		4242133E2107A4760099530B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4242133C2107A4760099530B /* LaunchScreen.storyboard */; };
 		424213412107A4760099530B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 424213402107A4760099530B /* main.m */; };
+		424213492107A7670099530B /* Games.m in Sources */ = {isa = PBXBuildFile; fileRef = 424213482107A7670099530B /* Games.m */; };
+		4242134C2107A7F60099530B /* GameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242134B2107A7F60099530B /* GameCell.m */; };
+		4242134F2108A3F50099530B /* GameDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242134E2108A3F50099530B /* GameDetailsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,12 @@
 		4242133D2107A4760099530B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4242133F2107A4760099530B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		424213402107A4760099530B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		424213472107A7670099530B /* Games.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Games.h; sourceTree = "<group>"; };
+		424213482107A7670099530B /* Games.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Games.m; sourceTree = "<group>"; };
+		4242134A2107A7F60099530B /* GameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameCell.h; sourceTree = "<group>"; };
+		4242134B2107A7F60099530B /* GameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameCell.m; sourceTree = "<group>"; };
+		4242134D2108A3F50099530B /* GameDetailsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameDetailsController.h; sourceTree = "<group>"; };
+		4242134E2108A3F50099530B /* GameDetailsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameDetailsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +73,13 @@
 				4242132F2107A4740099530B /* AppDelegate.m */,
 				424213312107A4740099530B /* ViewController.h */,
 				424213322107A4740099530B /* ViewController.m */,
+				424213472107A7670099530B /* Games.h */,
+				424213482107A7670099530B /* Games.m */,
 				424213342107A4740099530B /* Main.storyboard */,
+				4242134D2108A3F50099530B /* GameDetailsController.h */,
+				4242134E2108A3F50099530B /* GameDetailsController.m */,
+				4242134A2107A7F60099530B /* GameCell.h */,
+				4242134B2107A7F60099530B /* GameCell.m */,
 				4242133A2107A4760099530B /* Assets.xcassets */,
 				4242133C2107A4760099530B /* LaunchScreen.storyboard */,
 				4242133F2107A4760099530B /* Info.plist */,
@@ -146,8 +161,11 @@
 			files = (
 				424213332107A4740099530B /* ViewController.m in Sources */,
 				424213392107A4740099530B /* objC.xcdatamodeld in Sources */,
+				4242134F2108A3F50099530B /* GameDetailsController.m in Sources */,
 				424213412107A4760099530B /* main.m in Sources */,
+				4242134C2107A7F60099530B /* GameCell.m in Sources */,
 				424213302107A4740099530B /* AppDelegate.m in Sources */,
+				424213492107A7670099530B /* Games.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
